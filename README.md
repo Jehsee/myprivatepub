@@ -2,7 +2,7 @@
 
 ### Background ###
 
-Faye ([github](http://github.com/faye/faye)) is a rack-based messaging system that allows web clients to communicate. 
+Faye ([github](http://github.com/faye/faye)) is a rack-based messaging system that allows web clients to communicate.
 
 Ryan Bates created private_pub ([github](http://github.com/ryanb/private_pub)) to easily add Faye to Rails projects. There is a Railscast for that [here](http://railscasts.com/episodes/316-private-pub).
 
@@ -28,7 +28,7 @@ In this example, we want to create a Faye server named 'mypubserver' that will  
    Receiving objects: 100% (15/15), done.
    Resolving deltas: 100% (3/3), done.
    ~/projects> cd mypubserver
-   ~/projects/mypubserver> 
+   ~/projects/mypubserver>
    ```
 2. Open `config/private_pub.yml` in your text editor and replace MY_KEY with what you have in the `private_pub.yml` of your rails project. Also, replace MY_APP with the name of the heroku app, mypubsever in this case (this is different from the name of your rails app). Save this file.
 3. Run the bundler to install the gems
