@@ -1,10 +1,4 @@
-# Run with: rackup private_pub.ru -s thin -E production
-require "bundler/setup"
-require "yaml"
-require "faye"
-require "private_pub"
-
+require 'faye'
 Faye::WebSocket.load_adapter('thin')
-
-PrivatePub.load_config(File.expand_path("../config/private_pub.yml", __FILE__), ENV["RAILS_ENV"] || "production")
-run PrivatePub.faye_app
+faye_app = Faye::RackAdapter.new(:mount => '/faye', :timeout => 45)
+run faye_app
