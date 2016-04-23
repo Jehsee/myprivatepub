@@ -7,4 +7,4 @@
 production:
   server: "https://roastpubserver.herokuapp.com/faye"
   secret_token: "d2142930c355e0d4f888d8c5bef4b5124253ffc8a093569219f3ae716e3e60cf"
-  signature_expiration: 86400 # one day
+  signature_expiration: 3600 # one day
